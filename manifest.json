@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "ingenious",
+  "version": "0.1",
+
+  "description": "Adds new functionalities to Inginious",
+
+  "icons": {
+    "32": "icons/inginious-32.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://inginious.org/course/*/*", "*://inginious.info.ucl.ac.be/course/*/*"],
+      "js": ["ingenious.js"]
+    }
+  ]
+
+}
